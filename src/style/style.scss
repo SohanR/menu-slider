@@ -2,7 +2,7 @@ $modal-duration:1s;
 $prmry-color:#30336b;
 $scndry-color:#eb2edd;
 $border:rgba(200,200,200,0.1);
-
+$shadow:rgba(0,0,0,0.3);
 *{
     box-sizing: border-box;
 }
@@ -57,4 +57,48 @@ body{
             }
         }
     }
+
+    header{
+        background-color: $prmry-color;
+        color: white;
+        font-size: 120%;
+        position: relative;
+        padding: 40px 15px;
+        text-align: center;
+
+        h1{
+            margin: 0;
+        }
+
+        p{
+            margin: 30px 0;
+        }
+
+        .toggle{
+            background-color: $shadow;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+        }
+
+        .cta-btn{
+            padding: 12px 30px;
+            font-size: 20px;
+        }
+    }
+
+
+    button,input[type='submit']{
+        background-color: $scndry-color;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 8px 12px;
+    }
+
+    button:focus{
+        outline: none;
+    }
+
 }

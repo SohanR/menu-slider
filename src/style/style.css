@@ -57,4 +57,46 @@ body nav ul li a:hover {
 body nav ul li:first-of-type {
   border-top: 2px solid rgba(200, 200, 200, 0.1);
 }
+
+body header {
+  background-color: #30336b;
+  color: white;
+  font-size: 120%;
+  position: relative;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+body header h1 {
+  margin: 0;
+}
+
+body header p {
+  margin: 30px 0;
+}
+
+body header .toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+body header .cta-btn {
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+body button, body input[type='submit'] {
+  background-color: #eb2edd;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+body button:focus {
+  outline: none;
+}
 /*# sourceMappingURL=style.css.map */
