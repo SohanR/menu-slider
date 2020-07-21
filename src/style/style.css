@@ -6,6 +6,10 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 body nav {
@@ -100,6 +104,7 @@ body .container p {
 
 body .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -120,6 +125,10 @@ body .modal-container .modal {
           transform: translate(-50%, -50%);
   max-width: 100%;
   width: 400px;
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 body .modal-container .modal .close-btn {
@@ -169,6 +178,10 @@ body .modal-container .modal .modal-content .modal-form .submit-btn {
   width: 100%;
 }
 
+body .modal-container.show-modal {
+  display: block;
+}
+
 body button, body input[type='submit'] {
   background-color: #eb2edd;
   border: 0;
@@ -180,5 +193,10 @@ body button, body input[type='submit'] {
 
 body button:focus {
   outline: none;
+}
+
+body.show-nav {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
 }
 /*# sourceMappingURL=style.css.map */

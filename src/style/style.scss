@@ -12,6 +12,7 @@ $shadow2:rgba(0,0,0,0.6);
 body{
     font-family: 'Lato', sans-serif;
     margin: 0;
+    transition: transform 0.3s ease;    
 
     nav{
         background-color: $prmry-color;
@@ -102,7 +103,7 @@ body{
 
     .modal-container{
         background-color: $shadow2;
-        //display: none;
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -120,6 +121,8 @@ body{
             transform: translate(-50%,-50%);
             max-width: 100%;
             width: 400px;
+            animation-name: modalopen;
+            animation-duration: $modal-duration;
 
             .close-btn{
                 background: transparent;
@@ -171,9 +174,12 @@ body{
                     }
                     
                 }
-            }
-
+            }       
         }
+    }
+
+    .modal-container.show-modal{
+        display: block;
     }
 
 
@@ -190,4 +196,8 @@ body{
         outline: none;
     }
 
+}
+
+body.show-nav{
+    transform: translateX(200px);
 }
