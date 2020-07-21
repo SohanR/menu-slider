@@ -87,6 +87,88 @@ body header .cta-btn {
   font-size: 20px;
 }
 
+body .container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+body .container p {
+  margin: 30px 0;
+}
+
+body .modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body .modal-container .modal {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+
+body .modal-container .modal .close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .modal-container .modal .modal-header {
+  background: #30336b;
+  color: white;
+  padding: 15px;
+}
+
+body .modal-container .modal .modal-header h3 {
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+body .modal-container .modal .modal-content {
+  padding: 20px;
+}
+
+body .modal-container .modal .modal-content p {
+  margin: 30px 0;
+}
+
+body .modal-container .modal .modal-content .modal-form div {
+  margin: 15px 0;
+}
+
+body .modal-container .modal .modal-content .modal-form div label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+body .modal-container .modal .modal-content .modal-form div .form-input {
+  padding: 8px;
+  width: 100%;
+}
+
+body .modal-container .modal .modal-content .modal-form .submit-btn {
+  display: block;
+  padding: 12px;
+  width: 100%;
+}
+
 body button, body input[type='submit'] {
   background-color: #eb2edd;
   border: 0;
